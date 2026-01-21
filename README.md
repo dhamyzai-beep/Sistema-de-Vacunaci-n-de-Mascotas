@@ -1,5 +1,6 @@
 # Sistema-de-Vacunacion-de-Mascotas
 Contexto del problema
+
 En muchas clínicas veterinarias y consultorios pequeños, el control de la vacunación
 de las mascotas se realiza de forma manual mediante cuadernos, fichas físicas o
 archivos no estructurados. Este método presenta problemas como la pérdida de
