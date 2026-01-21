@@ -28,7 +28,7 @@ El sistema debe permitir:
 Almacena la información de los dueños de las mascotas, como nombre, teléfono y dirección.
 
 ### Mascotas
-Contiene los datos de cada mascota registrada, como nombre, raza y fecha de nacimiento.
+Contiene los datos de cada mascota registrada, como nombre, especie, raza y fecha de nacimiento.
 Cada mascota pertenece a un propietario.
 
 ### Vacunas
