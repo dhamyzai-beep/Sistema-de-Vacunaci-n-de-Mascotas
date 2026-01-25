@@ -46,3 +46,25 @@ El modelo entidad-relación del sistema se encuentra en la carpeta diagrams.
 La base de datos fue implementada en MySQL.
 El script SQL se encuentra en la carpeta database/modelo_fisico.sql.
 
+
+# Aplicación
+
+### Diseño de interfaz
+La aplicación contará con formularios gráficos para el registro de propietarios,
+mascotas, vacunas y el control de vacunación.
+
+### Validaciones
+Se validará que los campos obligatorios no estén vacíos y que los datos ingresados
+tengan el formato correcto antes de ser almacenados en la base de datos.
+
+### Acceso a datos
+La aplicación se conecta a una base de datos MySQL y permite realizar operaciones
+CRUD (Crear, Consultar, Actualizar y Eliminar registros).
+
+### Funcionalidades clave
+- Visualización de datos almacenados
+- Búsqueda de información específica
+- Registro y edición de datos
+- Eliminación segura de registros
+
+
