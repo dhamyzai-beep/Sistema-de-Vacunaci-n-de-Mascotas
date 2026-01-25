@@ -1,6 +1,6 @@
 # Sistema-de-Vacunacion-de-Mascotas
-Contexto del problema:
 
+## Contexto del problema:
 En muchas clínicas veterinarias y consultorios pequeños, el control de la vacunación
 de las mascotas se realiza de forma manual mediante cuadernos, fichas físicas o
 archivos no estructurados. Este método presenta problemas como la pérdida de
@@ -42,4 +42,7 @@ la fecha de aplicación y la próxima fecha de vacunación.
 El modelo entidad-relación del sistema se encuentra en la carpeta diagrams.
 📎 diagrams/modelo_logico.png
 
+## Modelo físico
+La base de datos fue implementada en MySQL.
+El script SQL se encuentra en la carpeta database/modelo_fisico.sql.
 
