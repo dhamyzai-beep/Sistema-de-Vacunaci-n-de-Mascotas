@@ -25,18 +25,19 @@ El sistema debe permitir:
 ## Descripción de las tablas principales
 
 ### Propietarios
-Almacena la información de los dueños de las mascotas, como nombre, teléfono y dirección.
+Almacena la información de los dueños de las mascotas, como nombre, apellido, cedula, teléfono 
+y dirección.
 
 ### Mascotas
-Contiene los datos de cada mascota registrada, como nombre, especie, raza y fecha de nacimiento.
+Contiene los datos de cada mascota registrada, como nombre, especie, raza, edad y sexo. 
 Cada mascota pertenece a un propietario.
 
 ### Vacunas
-Registra las vacunas disponibles, su nombre y descripción.
+Registra el nombre de la mascota, la vacuna, dosis, fecha de su vacunación, y observaciones.
 
 ### Registro_Vacunacion
-Guarda el historial de vacunación de cada mascota, indicando la vacuna aplicada,
-la fecha de aplicación y la próxima fecha de vacunación.
+Guarda el historial de vacunación de cada mascota, indicando la vacuna aplicada, la dosis, 
+la fecha de aplicación y en las observaciones la próxima fecha de vacunación o novedades.
 
 ## Diagrama del modelo lógico
 El modelo entidad-relación del sistema se encuentra en la carpeta diagrams.
@@ -54,16 +55,14 @@ La aplicación contará con formularios gráficos para el registro de propietari
 mascotas, vacunas y el control de vacunación.
 
 ### Validaciones
-Se validará que los campos obligatorios no estén vacíos y que los datos ingresados
+Se validará que los campos obligatorios no estén vacíos y que los datos ingresados 
 tengan el formato correcto antes de ser almacenados en la base de datos.
 
 ### Acceso a datos
-La aplicación se conecta a una base de datos MySQL y permite realizar operaciones
-CRUD (Crear, Consultar, Actualizar y Eliminar registros).
+El modelo de base de datos fue diseñado bajo el enfoque relacional (MySQL); sin embargo, 
+para la implementación del sistema se utilizó almacenamiento en memoria mediante 
+estructuras ArrayList en Java.
 
 ### Funcionalidades clave
 - Visualización de datos almacenados
-- Búsqueda de información específica
 - Registro y edición de datos
-
-
