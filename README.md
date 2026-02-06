@@ -1,4 +1,4 @@
-# Sistema-de-Vacunacion-de-Mascotas
+# Sistema-de-Vacunacion-de-Mascotas.
 
 ## Contexto del problema:
 En muchas clínicas veterinarias y consultorios pequeños, el control de la vacunación
