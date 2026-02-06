@@ -65,6 +65,5 @@ CRUD (Crear, Consultar, Actualizar y Eliminar registros).
 - Visualización de datos almacenados
 - Búsqueda de información específica
 - Registro y edición de datos
-- Eliminación segura de registros
 
 
