@@ -1,35 +1,38 @@
 CREATE DATABASE sistema_vacunacion_mascotas;
 USE sistema_vacunacion_mascotas;
 
-CREATE TABLE propietarios (
-    id_propietario INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100),
-    telefono VARCHAR(20),
-    direccion VARCHAR(150)
+CREATE TABLE dueño (
+    id_dueño INT AUTO_INCREMENT PRIMARY KEY,
+    nombres VARCHAR(50),
+    apellidos VARCHAR(50),
+    cedula VARCHAR(15),
+    telefono VARCHAR(15),
+    direccion VARCHAR(100)
 );
 
-CREATE TABLE mascotas (
+CREATE TABLE mascota (
     id_mascota INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50),
-    especie VARCHAR(50),
-    raza VARCHAR(50),
-    fecha_nacimiento DATE,
-    id_propietario INT,
-    FOREIGN KEY (id_propietario) REFERENCES propietarios(id_propietario)
+    especie VARCHAR(30),
+    raza VARCHAR(30),
+    edad INT,
+    sexo VARCHAR(10),
+    nombre_dueño VARCHAR(50),
+    cedula_dueño VARCHAR(15),
+    telefono_dueño VARCHAR(15)
 );
 
-CREATE TABLE vacunas (
+CREATE TABLE vacuna (
     id_vacuna INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100),
-    descripcion TEXT
+    nombre_vacuna VARCHAR(50),
+    dosis VARCHAR(20)
 );
 
 CREATE TABLE registro_vacunacion (
     id_registro INT AUTO_INCREMENT PRIMARY KEY,
-    fecha_aplicacion DATE,
-    proxima_vacuna DATE,
-    id_mascota INT,
-    id_vacuna INT,
-    FOREIGN KEY (id_mascota) REFERENCES mascotas(id_mascota),
-    FOREIGN KEY (id_vacuna) REFERENCES vacunas(id_vacuna)
+    nombre_mascota VARCHAR(50),
+    nombre_vacuna VARCHAR(50),
+    dosis VARCHAR(20),
+    fecha_vacuna DATE,
+    observaciones VARCHAR(150)
 );
